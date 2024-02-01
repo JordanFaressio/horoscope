@@ -2,11 +2,17 @@
 switch ($action)
 {
     case 'reponse':
-    {
-        echo 'Partie a coder';
-        break;
-    }
-    default:
-    {incude 'views/choix.php'}
+        {
+            var_dump($_REQUEST['liste']);
+            $liste=$_REQUEST['liste'];
+
+include 'views/reponse.php';
     
-}    
+
+            
+            break;
+        }
+        default:
+        {include 'views/choix.php';}
+}
+?>
